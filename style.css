@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ ul{
+    display: flex;
+    gap: 30px;
+    padding-left: 50px;
+    width: 100%;
+    font-size: 15px;
+}
+ ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+li i{
+    font-size: 30px;
+    transform: tranfrom 0.5s ease-in-out;
+}
+span{
+    padding: 15px;
+    background-color: blue;
+    border-radius: 15px;
+    top: 30px;
+    display: none;
+  
+
+}
+li:hover i{
+    
+    transform: rotate(20deg);  
+    color:blue;  
+}
+li:hover span{
+    display: block;
+}
+.text-header{
+    padding: 30px;
+    width: 100%;
+    height: 100px;
+   display: flex;
+   gap: 10px;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color:rgb(46, 68, 109);
+    gap: 600px;
+    z-index: 999;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.logo img{
+    width: 130px;
+    height: 100px;
+   
+}
+nav ul{
+    display: flex;
+    padding-right: 120px;
+    
+}
+nav li a{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+ul li a:hover{
+   
+    padding-bottom: 25px;
+    border-bottom: 3px solid black;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  
+
+}
+section{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    animation: slideimage 15s infinite;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.slide:nth-child(1){
+    animation-delay: 0s;
+}
+.slide:nth-child(2){
+    animation-delay: 3s;
+}
+.slide:nth-child(3){
+    animation-delay: 6s;
+}
+.slide:nth-child(4){
+    animation-delay: 9s;
+}
+.slide:nth-child(5){
+    animation-delay: 12s;
+}
+@keyframes slideimage{
+    0%{
+        opacity: 0;
+    }
+    18%%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: black
+}
+.top h1{
+    color: white;
+    padding: 15px;
+    font-family: "Battambang", system-ui;
+    font-size: 50px;
+}
+.top{
+    width: 100%;
+    height: 20%;
+}
+.bottum{
+    width: 100%;
+    height: 80%;
+    display: flex;
+
+}
+.bottum .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    animation: img 3s ease-in-out;
+
+}
+.buttom .left img{
+    width: 50%;
+    height: 50px;
+}
+@keyframes img{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.bottum .right{
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+    padding: 20px;
+    color: wheat;
+}
+.bottum .right h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+}
+.right p{
+    padding: 50px;
+    font-size: 20px;
+}
+.section2 {
+    width: 100%;
+    height: 700vh;
+  
+    
+   
+}
+.section2 h1{
+    color: red;
+}
+.img{
+    width: 100%;
+   display: flex;
+   gap: 40px;
+   overflow: scroll;
+  
+}
+.img img{
+    border-radius: 15px;
+    
+}
+.img::-webkit-scrollbar{
+    display: none;
+}
+.section3{
+    width: 100%;
+    
+    display: flex;
+    gap: 30px;
+}
+.header h1{
+    width: 100%;
+    height: 0px5;
+    align-items: center;
+
+}
+.section3 .header h1{
+    font-size: 40px;
+    padding: 15px;
+    color: red;
+}
+.section3 .header a{
+    font-size: 20px;
+    margin: 15px;
+    color: white;
+    
+}
+.section3 .header i{
+    color: white;
+    font-size: 20px;
+}
+.section3 .about h1{
+    font-size:40px;
+    color: red;
+    padding: 15px;
+}
+.section3 .about p{
+    font-size: 20px;
+    color: white;
+}
+.communicate h1{
+    font-size: 40px;
+    padding: 15px;
+    color: red;
+}
+.communicate p{
+    font-size: 20px;
+    color: white;
+}
